@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aromas de Luna</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Georgia', serif;
+        }
+
+        body {
+            background-color: #faf7fc;
+            color: #42334e;
+        }
+
+        header {
+            background: #59436e;
+            color: white;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 38px;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+
+        nav {
+            background: #e9dff0;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #59436e;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #a47bc0;
+        }
+
+        .inicio {
+            text-align: center;
+            padding: 90px 20px;
+            background: linear-gradient(135deg, #e9dff0, #faf7fc);
+        }
+
+        .inicio h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .inicio p {
+            font-size: 19px;
+            max-width: 650px;
+            margin: auto;
+            line-height: 1.7;
+        }
+
+        .boton {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 13px 28px;
+            background: #72558b;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+
+        .boton:hover {
+            background: #4c365e;
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        section h2 {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #59436e;
+        }
+
+        .productos {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .producto {
+            background: white;
+            width: 240px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px #00000015;
+            transition: 0.3s;
+        }
+
+        .producto:hover {
+            transform: translateY(-7px);
+        }
+
+        .producto .emoji {
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .producto h3 {
+            color: #72558b;
+            margin-bottom: 10px;
+        }
+
+        .producto p {
+            line-height: 1.5;
+        }
+
+        .nosotros {
+            background: #eee5f3;
+        }
+
+        .nosotros p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .contacto p {
+            margin: 12px;
+            font-size: 17px;
+        }
+
+        footer {
+            background: #59436e;
+            color: white;
+            text-align: center;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 29px;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 8px;
+            }
+
+            .inicio h2 {
+                font-size: 32px;
+            }
+
+            .producto {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🌙 Aromas de Luna</h1>
+        <p>Un aroma especial para cada momento</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="inicio" id="inicio">
+        <h2>Bienvenidos a Aromas de Luna</h2>
+        <p>
+            Descubrí un mundo de aromas, tranquilidad y armonía.
+            Tenemos productos ideales para acompañar tus momentos
+            especiales y llenar tus espacios de fragancias únicas.
+        </p>
+        <a href="#productos" class="boton">Ver productos</a>
+    </div>
+
+    <section id="productos">
+        <h2>Nuestros productos</h2>
+
+        <div class="productos">
+
+            <div class="producto">
+                <div class="emoji">🪻</div>
+                <h3>Sahumerios</h3>
+                <p>Distintos aromas para perfumar tus espacios y disfrutar de cada momento.</p>
+            </div>
+
+            <div class="producto">
+                <div class="emoji">🌸</div>
+                <h3>Bombas aromáticas</h3>
+                <p>Pequeños detalles que llenan tus ambientes de fragancias agradables.</p>
+            </div>
+
+            <div class="producto">
+                <div class="emoji">✨</div>
+                <h3>Esferas aromáticas</h3>
+                <p>Una opción práctica para darle un toque especial a tus espacios.</p>
+            </div>
+
+            <div class="producto">
+                <div class="emoji">🌺</div>
+                <h3>Aromatizantes textiles</h3>
+                <p>Fragancias para renovar y perfumar tus telas favoritas.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="nosotros" id="nosotros">
+        <h2>Sobre nosotros</h2>
+        <p>
+            Aromas de Luna nace con la idea de ofrecer productos
+            aromáticos que acompañen tu día a día. Queremos que
+            cada fragancia transmita una sensación especial y
+            convierta cualquier espacio en un lugar más agradable.
+            ¡Gracias por elegirnos!
+        </p>
+    </section>
+
+    <section class="contacto" id="contacto">
+        <h2>Contactanos</h2>
+        <p>¿Querés conocer nuestros productos o realizar un pedido?</p>
+        <p>¡Estamos para ayudarte!</p>
+
+        <a class="boton"
+           href="https://wa.me/549XXXXXXXXXX"
+           target="_blank">
+           Consultar por WhatsApp
+        </a>
+    </section>
+
+    <footer>
+        <p>🌙 Aromas de Luna</p>
+        <p>Gracias por acompañar nuestro emprendimiento ♡</p>
+        <p>© 2026 - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
