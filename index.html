@@ -24,6 +24,7 @@
   }
   img { max-width: 100%; display: block; }
 
+  /* ---------- HEADER ---------- */
   header {
     position: sticky; top: 0; z-index: 100;
     background: rgba(253, 248, 243, 0.95);
@@ -39,13 +40,14 @@
   .nav a { text-decoration: none; color: var(--texto); font-weight: 500; transition: color .2s; }
   .nav a:hover { color: var(--acento); }
 
+  /* ---------- HERO CON FONDO ---------- */
   .hero {
     min-height: 80vh;
     display: flex; align-items: center; justify-content: center;
     text-align: center; padding: 60px 20px;
     background:
       linear-gradient(rgba(253, 248, 243, 0.78), rgba(253, 248, 243, 0.85)),
-      url('https://images.unsplash.com/photo-1586875401592-64f1d5cb43e4?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat,
+      url('https://images.unsplash.com/photo-1586875401592-64f1d5cb43e4?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D') center/cover no-repeat,
       linear-gradient(135deg, var(--rosa), var(--lavanda));
   }
   .hero-content { max-width: 720px; background: rgba(255,255,255,0.6); padding: 40px; border-radius: 24px; }
@@ -63,6 +65,7 @@
   .section-title { text-align: center; font-size: 2rem; color: var(--acento); margin-bottom: 10px; }
   .section-sub { text-align: center; margin-bottom: 40px; opacity: .8; }
 
+  /* ---------- MARCAS ---------- */
   .marcas { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 26px; }
   .marca {
     background: var(--blanco); border-radius: 20px; overflow: hidden;
@@ -74,6 +77,7 @@
   .marca h3 { padding: 16px 10px 4px; color: var(--acento); font-size: 1.25rem; }
   .marca p { padding: 0 14px 18px; font-size: .95rem; }
 
+  /* ---------- PRODUCTOS ---------- */
   .productos-bg { background: linear-gradient(180deg, var(--crema), var(--lavanda)); }
   .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 24px; }
   .card {
@@ -97,6 +101,7 @@
   .precios li span:last-child { font-weight: 600; color: var(--acento); }
   .card .btn { margin-top: auto; text-align: center; padding: 11px 20px; font-size: .95rem; }
 
+  /* ---------- CONTACTO ---------- */
   .contacto { text-align: center; background: var(--rosa); }
   .contacto p { margin-bottom: 20px; font-size: 1.05rem; }
   .btn-wsp { background: #6fa77a; }
@@ -124,6 +129,7 @@
   </div>
 </header>
 
+<!-- HERO -->
 <div class="hero">
   <div class="hero-content">
     <h1>Aromas que transforman tu hogar</h1>
@@ -132,28 +138,29 @@
   </div>
 </div>
 
+<!-- MARCAS -->
 <section id="marcas">
   <div class="container">
     <h2 class="section-title">Nuestras marcas</h2>
     <p class="section-sub">Cuatro líneas de aromas pensadas para cada momento</p>
     <div class="marcas">
       <div class="marca">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSehgi8MYuKZ4CELnRUZEST_G4LSxFjg3K3nZ83u6Q8lw&s=10" alt="Sagrada Madre">
+        <img src="https://images.unsplash.com/photo-1783142978783-c141673fe042?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Sagrada Madre">
         <h3>Sagrada Madre</h3>
         <p>Aromas cálidos y envolventes para momentos de calma.</p>
       </div>
       <div class="marca">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBgWPAh-fPqoUTu3UGXN-ZBSmBS0npxG5rZUxomQl0ug&s=10" alt="Aromanza">
+        <img src="https://images.unsplash.com/photo-1639390167093-9c62311fe84d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Aromanza">
         <h3>Aromanza</h3>
         <p>Fragancias románticas y delicadas para tu espacio.</p>
       </div>
       <div class="marca">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUbfEI_iAtwRetFd-SGOB6-BayyEPtgmGo-hxQv_nnxQ&s=10" alt="Iluminarte">
+        <img src="https://images.unsplash.com/photo-1541795083-1b160cf4f3d7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Iluminarte">
         <h3>Iluminarte</h3>
         <p>Luz y perfume para renovar la energía de cada ambiente.</p>
       </div>
       <div class="marca">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL___52ItzXUW58i7YcBGE1SJKKaYjLTYNVnvFmU24pw&s=10" alt="Staya">
+        <img src="https://images.unsplash.com/photo-1784802066180-98da8385542e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Staya">
         <h3>Staya</h3>
         <p>Frescura natural para acompañar tu día a día.</p>
       </div>
@@ -161,14 +168,16 @@
   </div>
 </section>
 
+<!-- PRODUCTOS -->
 <section id="productos" class="productos-bg">
   <div class="container">
     <h2 class="section-title">Nuestros productos</h2>
     <p class="section-sub">Elegí tu aroma y pedilo directo por WhatsApp</p>
 
     <div class="grid">
+
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1586875401592-64f1d5cb43e4?auto=format&fit=crop&w=900&q=80" alt="Perfume textil">
+        <img src="https://images.unsplash.com/photo-1586875401592-64f1d5cb43e4?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Perfume textil">
         <div class="card-body">
           <span class="tag">Perfumes textiles</span>
           <h3>Perfume Textil</h3>
@@ -181,7 +190,7 @@
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1602928321679-560bb453f190?auto=format&fit=crop&w=900&q=80" alt="Sahumerios triple empaste">
+        <img src="https://images.unsplash.com/photo-1784802066180-98da8385542e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Sahumerios triple empaste">
         <div class="card-body">
           <span class="tag">Sahumerios</span>
           <h3>Sahumerios Triple Empaste</h3>
@@ -194,7 +203,7 @@
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=900&q=80" alt="Sahumerios de 1 hora">
+        <img src="https://images.unsplash.com/photo-1783142978783-c141673fe042?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Sahumerios de 1 hora">
         <div class="card-body">
           <span class="tag">Sahumerios</span>
           <h3>Sahumerios de 1 hs</h3>
@@ -206,7 +215,7 @@
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80" alt="Sahumerio de 1:30 hs">
+        <img src="https://images.unsplash.com/photo-1639390167093-9c62311fe84d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Sahumerio de 1:30 hs">
         <div class="card-body">
           <span class="tag">Sahumerios</span>
           <h3>Sahumerio 1:30 hs</h3>
@@ -218,7 +227,7 @@
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1541795083-1b160cf4f3d7?auto=format&fit=crop&w=900&q=80" alt="Bombas aromáticas">
+        <img src="https://images.unsplash.com/photo-1541795083-1b160cf4f3d7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Bombas aromáticas">
         <div class="card-body">
           <span class="tag">Bombas aromáticas</span>
           <h3>Pastillas</h3>
@@ -230,7 +239,7 @@
       </div>
 
       <div class="card">
-        <img src="https://images.unsplash.com/photo-1572635148818-ef6fd45eb394?auto=format&fit=crop&w=900&q=80" alt="Iluminarte">
+        <img src="https://images.unsplash.com/photo-1639390167093-9c62311fe84d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Iluminarte">
         <div class="card-body">
           <span class="tag">Iluminarte</span>
           <h3>Iluminarte</h3>
@@ -240,10 +249,12 @@
           <a href="#contacto" class="btn" data-producto="Iluminarte">Pedir</a>
         </div>
       </div>
+
     </div>
   </div>
 </section>
 
+<!-- CONTACTO -->
 <section id="contacto" class="contacto">
   <div class="container">
     <h2 class="section-title">¿Querés hacer tu pedido?</h2>
@@ -257,6 +268,8 @@
 </footer>
 
 <script>
+  // Al tocar "Pedir" se arma un mensaje de WhatsApp con el producto elegido.
+  // Reemplazá 549XXXXXXXXXX por tu número (código de país + área + número, sin 0 ni 15).
   const NUMERO = '549XXXXXXXXXX';
 
   document.querySelectorAll('[data-producto]').forEach(btn => {
@@ -265,12 +278,6 @@
       const producto = btn.getAttribute('data-producto');
       const mensaje = encodeURIComponent(`Hola! Quiero pedir: ${producto}`);
       window.open(`https://wa.me/${NUMERO}?text=${mensaje}`, '_blank');
-    });
-  });
-
-  document.querySelectorAll('img').forEach(img => {
-    img.addEventListener('error', () => {
-      img.style.display = 'none';
     });
   });
 </script>
