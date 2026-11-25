@@ -47,7 +47,7 @@
     text-align: center; padding: 60px 20px;
     background:
       linear-gradient(rgba(253, 248, 243, 0.78), rgba(253, 248, 243, 0.85)),
-      url('https://images.unsplash.com/photo-1602928321679-560bb453f190?auto=format&fit=crop&w=1600&q=80') center/cover no-repeat,
+      url('https://images.unsplash.com/photo-1586875401592-64f1d5cb43e4?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D') center/cover no-repeat,
       linear-gradient(135deg, var(--rosa), var(--lavanda));
   }
   .hero-content { max-width: 720px; background: rgba(255,255,255,0.65); padding: 40px; border-radius: 24px; }
@@ -70,10 +70,19 @@
   .marca {
     background: var(--blanco); border-radius: 20px; overflow: hidden;
     box-shadow: 0 6px 20px rgba(0,0,0,.06); text-align: center;
-    transition: transform .25s;
+    transition: transform .25s; display: flex; flex-direction: column;
   }
   .marca:hover { transform: translateY(-6px); }
-  .marca img { width: 100%; height: 260px; object-fit: cover; background: var(--rosa); }
+  .marca-logo-box {
+    width: 100%; height: 220px;
+    display: flex; align-items: center; justify-content: center;
+    padding: 20px;
+  }
+  .marca-logo-box svg { width: 100%; height: 100%; max-width: 220px; }
+  .bg-sagrada { background: linear-gradient(135deg, #f9efe6, #ecd9c6); }
+  .bg-aromanza { background: linear-gradient(135deg, #f9e8ee, #edd5e0); }
+  .bg-iluminarte { background: linear-gradient(135deg, #f5f0fb, #e3d6f5); }
+  .bg-staya { background: linear-gradient(135deg, #edf5ec, #d4e5d2); }
   .marca h3 { padding: 16px 10px 4px; color: var(--acento); font-size: 1.25rem; }
   .marca p { padding: 0 14px 18px; font-size: .95rem; }
 
@@ -138,41 +147,80 @@
   </div>
 </div>
 
-<!-- MARCAS -->
+<!-- MARCAS (Logos vectoriales integrados que nunca fallan al cargar) -->
 <section id="marcas">
   <div class="container">
     <h2 class="section-title">Nuestras marcas</h2>
     <p class="section-sub">Cuatro líneas de aromas pensadas para cada momento</p>
     <div class="marcas">
+
       <div class="marca">
-        <!-- Palo santo y elementos naturales / cálidos -->
-        <img src="https://images.unsplash.com/photo-1615486511484-92e172cc4fe0?auto=format&fit=crop&w=800&q=80" alt="Sagrada Madre">
+        <div class="marca-logo-box bg-sagrada">
+          <svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sagrada Madre">
+            <circle cx="120" cy="54" r="24" fill="none" stroke="#8d5e45" stroke-width="2"/>
+            <path d="M120 34 C128 48, 128 60, 120 74 C112 60, 112 48, 120 34 Z" fill="#b98b7a" opacity="0.85"/>
+            <path d="M100 54 C112 46, 128 46, 140 54 C128 62, 112 62, 100 54 Z" fill="#8d5e45" opacity="0.45"/>
+            <text x="120" y="108" text-anchor="middle" font-family="Georgia, serif" font-size="22" font-weight="bold" fill="#6b4430" letter-spacing="1.5">SAGRADA</text>
+            <text x="120" y="132" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#8d5e45" letter-spacing="4">MADRE</text>
+          </svg>
+        </div>
         <h3>Sagrada Madre</h3>
         <p>Aromas cálidos y envolventes para momentos de calma.</p>
       </div>
+
       <div class="marca">
-        <!-- Flores y esencias delicadas / románticas -->
-        <img src="https://images.unsplash.com/photo-1596436889106-be35e843f974?auto=format&fit=crop&w=800&q=80" alt="Aromanza">
+        <div class="marca-logo-box bg-aromanza">
+          <svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Aromanza">
+            <path d="M120 28 C132 42, 132 62, 120 74 C108 62, 108 42, 120 28 Z" fill="none" stroke="#9e5a72" stroke-width="2"/>
+            <path d="M120 74 C104 64, 96 48, 106 38 C114 44, 118 56, 120 74 Z" fill="#c98aa0" opacity="0.7"/>
+            <path d="M120 74 C136 64, 144 48, 134 38 C126 44, 122 56, 120 74 Z" fill="#c98aa0" opacity="0.7"/>
+            <text x="120" y="114" text-anchor="middle" font-family="Georgia, serif" font-size="24" font-style="italic" font-weight="bold" fill="#7a3e54" letter-spacing="2">Aromanza</text>
+            <line x1="70" y1="126" x2="170" y2="126" stroke="#c98aa0" stroke-width="1.5"/>
+          </svg>
+        </div>
         <h3>Aromanza</h3>
         <p>Fragancias románticas y delicadas para tu espacio.</p>
       </div>
+
       <div class="marca">
-        <!-- Velas, luz y humo suave -->
-        <img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?auto=format&fit=crop&w=800&q=80" alt="Iluminarte">
+        <div class="marca-logo-box bg-iluminarte">
+          <svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Iluminarte">
+            <circle cx="120" cy="52" r="12" fill="#8b6fb0"/>
+            <g stroke="#8b6fb0" stroke-width="2" stroke-linecap="round">
+              <line x1="120" y1="24" x2="120" y2="34"/>
+              <line x1="120" y1="70" x2="120" y2="80"/>
+              <line x1="92" y1="52" x2="102" y2="52"/>
+              <line x1="138" y1="52" x2="148" y2="52"/>
+              <line x1="100" y1="32" x2="107" y2="39"/>
+              <line x1="133" y1="65" x2="140" y2="72"/>
+              <line x1="140" y1="32" x2="133" y2="39"/>
+              <line x1="107" y1="65" x2="100" y2="72"/>
+            </g>
+            <text x="120" y="116" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="600" fill="#5b437a" letter-spacing="3">ILUMINARTE</text>
+          </svg>
+        </div>
         <h3>Iluminarte</h3>
         <p>Luz y perfume para renovar la energía de cada ambiente.</p>
       </div>
+
       <div class="marca">
-        <!-- Hierbas frescas y naturaleza -->
-        <img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=800&q=80" alt="Staya">
+        <div class="marca-logo-box bg-staya">
+          <svg viewBox="0 0 240 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Staya">
+            <path d="M120 76 C120 48, 138 30, 152 28 C150 48, 138 68, 120 76 Z" fill="#6f946c"/>
+            <path d="M120 76 C120 54, 104 38, 92 38 C94 54, 104 68, 120 76 Z" fill="#93b390"/>
+            <text x="120" y="116" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="26" font-weight="600" fill="#476645" letter-spacing="5">STAYA</text>
+            <text x="120" y="134" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6f946c" letter-spacing="3">AROMAS NATURALES</text>
+          </svg>
+        </div>
         <h3>Staya</h3>
         <p>Frescura natural para acompañar tu día a día.</p>
       </div>
+
     </div>
   </div>
 </section>
 
-<!-- PRODUCTOS -->
+<!-- PRODUCTOS (Con tus imágenes originales restauradas) -->
 <section id="productos" class="productos-bg">
   <div class="container">
     <h2 class="section-title">Nuestros productos</h2>
@@ -181,8 +229,7 @@
     <div class="grid">
 
       <div class="card">
-        <!-- Frasco atomizador / perfume textil -->
-        <img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80" alt="Perfume textil">
+        <img src="https://images.unsplash.com/photo-1586875401592-64f1d5cb43e4?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Perfume textil">
         <div class="card-body">
           <span class="tag">Perfumes textiles</span>
           <h3>Perfume Textil</h3>
@@ -195,8 +242,7 @@
       </div>
 
       <div class="card">
-        <!-- Sahumerios artesanales gruesos / triple empaste -->
-        <img src="https://images.unsplash.com/photo-1586875401592-64f1d5cb43e4?auto=format&fit=crop&w=800&q=80" alt="Sahumerios triple empaste">
+        <img src="https://images.unsplash.com/photo-1784802066180-98da8385542e?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Sahumerios triple empaste">
         <div class="card-body">
           <span class="tag">Sahumerios</span>
           <h3>Sahumerios Triple Empaste</h3>
@@ -209,8 +255,7 @@
       </div>
 
       <div class="card">
-        <!-- Varillas de incienso encendidas -->
-        <img src="https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=800&q=80" alt="Sahumerios de 1 hora">
+        <img src="https://images.unsplash.com/photo-1783142978783-c141673fe042?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Sahumerios de 1 hora">
         <div class="card-body">
           <span class="tag">Sahumerios</span>
           <h3>Sahumerios de 1 hs</h3>
@@ -222,8 +267,7 @@
       </div>
 
       <div class="card">
-        <!-- Sahumerio en porta incienso de madera -->
-        <img src="https://images.unsplash.com/photo-1541795083-1b160cf4f3d7?auto=format&fit=crop&w=800&q=80" alt="Sahumerio de 1:30 hs">
+        <img src="https://images.unsplash.com/photo-1639390167093-9c62311fe84d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Sahumerio de 1:30 hs">
         <div class="card-body">
           <span class="tag">Sahumerios</span>
           <h3>Sahumerio 1:30 hs</h3>
@@ -235,8 +279,7 @@
       </div>
 
       <div class="card">
-        <!-- Bombas / pastillas efervescentes aromáticas -->
-        <img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?auto=format&fit=crop&w=800&q=80" alt="Bombas aromáticas">
+        <img src="https://images.unsplash.com/photo-1541795083-1b160cf4f3d7?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Bombas aromáticas">
         <div class="card-body">
           <span class="tag">Bombas aromáticas</span>
           <h3>Pastillas</h3>
@@ -248,8 +291,7 @@
       </div>
 
       <div class="card">
-        <!-- Conitos de incienso / cascada de humo -->
-        <img src="https://images.unsplash.com/photo-1639390167093-9c62311fe84d?auto=format&fit=crop&w=800&q=80" alt="Iluminarte">
+        <img src="https://images.unsplash.com/photo-1639390167093-9c62311fe84d?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D" alt="Iluminarte">
         <div class="card-body">
           <span class="tag">Iluminarte</span>
           <h3>Iluminarte</h3>
